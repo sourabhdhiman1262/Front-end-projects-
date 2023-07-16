@@ -1,0 +1,20 @@
+body{
+         background: linear-gradient(to right,
+         #1c87c9 50%,  #55B0B1 50%);
+         padding-block: 60%;
+}
+.parent{
+    display: flex;
+    padding:2px;
+    color: #aedad8;
+}
+.child{
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 50%;
+}
+#a{
+    background-color: #c5e04b;
+    text-align: center;
+    box-shadow: 3px 5px #4fa2a2;
+}

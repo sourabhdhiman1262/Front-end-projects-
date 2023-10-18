@@ -1,0 +1,277 @@
+.Toggle {
+    margin-top: 10vw;
+    margin-left: 45vw;
+    width: auto;
+    height: 5px;
+}
+.year {
+    margin-top: -16%;
+    margin-left: 35%;
+    width: 5px;
+    font-size: 30px;
+}
+.month {
+    margin-top: -16%;
+    margin-left: -50%;
+    width: 10px;
+    font-size: 30px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.I {
+    background-image: url('/storage/emulated/0/Download/S.jpeg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+    /* Ensure the element covers the entire viewport */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* To cover the entire viewport */
+    top: 0;
+    left: 0;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: -1;
+    left: -1;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.3s;
+    transition: .3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    webkit-transform: translateX(26px);
+    ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.leftbox {
+    float:;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin-inline: 25%;
+    overflow: hidden;
+    transition: all ease 1.1s;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 5px 5px 10px #7d7d7d,
+    -5px -5px 10px #ffffff;
+}
+.middlebox {
+    float: inline-block;
+    display: inline-block;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 5px 5px 10px #7d7d7d,
+    -5px -5px 10px #ffffff;
+    text-align: center;
+    color-scheme: auto;
+    width: 200px;
+    height: 300px;
+    margin-inline: 25%;
+    margin-top: 15px;
+    transition: all ease 1.1s;
+}
+.rightbox {
+    float: inline-block;
+    display: inline-block;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 5px 5px 10px #7d7d7d,
+    -5px -5px 10px #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 300px;
+    margin-inline: 25%;
+    margin-top: 15px;
+    transition: all ease 1.1s;
+}
+#A {
+    position: absolute;
+    overflow-x: auto;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    height: 150%;
+    justify-items: center;
+    width: auto;
+    padding-top: 10vw;
+    aspect-ratio: auto;
+}
+#B {
+    overflow-x: auto;
+    margin-top: 20%;
+    margin-bottom: 50%;
+    height: 150%;
+    width: auto;
+    padding-top: 10vw;
+    aspect-ratio: auto;
+}
+@media(min:768px) {
+    #A {
+        position: absolute;
+        overflow-x: auto;
+        margin-top: 20%;
+        margin-bottom: 50%;
+        height: 150%;
+        justify-items: center;
+        width: auto;
+        padding-top: 10vw;
+        aspect-ratio: auto;
+    }
+    #B {
+        border: solid;
+        border-color: red;
+        overflow-x: auto;
+        margin-top: 20%;
+        margin-bottom: 50%;
+        height: 150%;
+        width: auto;
+        padding-top: 10vw;
+        aspect-ratio: auto;
+    }
+
+}
+button {
+    color: #7372d1;
+}
+.p {
+    font-size: 20px;
+    word-spacing: 0px;
+}
+.M {
+    font-size: 35px;
+    word-spacing: 0px;
+}
+.L {
+    border-top: 2px solid black;
+    padding: 9px;
+    border-color: grey;
+}
+.L1 {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    padding: 9px;
+    border-color: grey;
+}
+.leftbox:hover {
+    object-fit: cover;
+    scale: 1.2;
+    color: white;
+    background-image: linear-gradient(to bottom right, #a0a2ea, #7372d1);
+}
+.middlebox:hover {
+    object-fit: cover;
+    scale: 1.2;
+    color: white;
+    background-image: linear-gradient(to bottom right, #a0a2ea, #7372d1);
+}
+.rightbox:hover {
+    object-fit: cover;
+    scale: 1.2;
+    color: white;
+    background-image: linear-gradient(to bottom right, #a0a2ea, #7372d1);
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    border: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10rem;
+    transition: all 0.02s;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    z-index: 0;
+    box-shadow: 0 0px 7px -5px rgba(0, 0, 0, 0.5);
+}
+
+.button:hover {
+    background: rgb(193, 228, 248);
+    color: rgb(33, 0, 85);
+}
+
+.button:active {
+    transform: scale(0.97);
+}
+
+.hoverEffect {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hoverEffect div {
+    background: rgb(222,0,75);
+    background: linear-gradient(90deg, rgba(222,0,75,1) 0%, rgba(191,70,255,1) 49%, rgba(0,212,255,1) 100%);
+    border-radius: 40rem;
+    width: 10rem;
+    height: 10rem;
+    transition: 0.4s;
+    filter: blur(20px);
+    animation: effect infinite 3s linear;
+    opacity: 0.5;
+}
+
+.button:hover .hoverEffect div {
+    width: 8rem;
+    height: 8rem;
+}
+
+@keyframes effect {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
